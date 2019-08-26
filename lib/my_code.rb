@@ -18,9 +18,6 @@ def reduce(source_array, starting = 0)
     run_total = yield(run_total, n)
     i += 1
   end
-  if run_total == 0
-    return TRUE
-  end
   run_total
 end
   
