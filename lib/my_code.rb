@@ -12,7 +12,7 @@ end
 
 def reduce(source_array, starting = 0)
   i = 0
-  run_total = True
+  run_total = source_array? {|i| i.is_a?(Integer)} ? 0 : True
   if source_array.all? {|i| i.is_a?(Integer)}
     run_total = starting
   end
